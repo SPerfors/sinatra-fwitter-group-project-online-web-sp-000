@@ -1,12 +1,16 @@
 class TweetsController < ApplicationController
 
   get '/tweets' do 
+<<<<<<< HEAD
     if logged_in?
       @user = current_user
       erb :'/tweets/tweets'
     else
       redirect '/login'
     end
+=======
+   
+>>>>>>> 1731f6a3db6cfd97619b4a903ec670855d2a9f9e
   end
   
   get '/tweets/new' do 
